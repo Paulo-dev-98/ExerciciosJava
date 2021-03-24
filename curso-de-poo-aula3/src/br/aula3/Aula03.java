@@ -5,7 +5,11 @@ public class Aula03 {
       Caneta c1 = new Caneta("a la satanas", "preta", 0.7f);
       c1.status();
       
-      
+      Estojo es = new Estojo("a la satanas", "preto", 3);
+     
+      es.abrir();
+      es.status();
+      es.pegarMaterial();
       
       //      c1.setModelo("bic 4 cores");
 //      c1.setPonta(0.7f);
