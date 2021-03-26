@@ -8,11 +8,6 @@ public class ContaBanco {
 	private float saldo;
 	private boolean status;
 
-	public ContaBanco() {
-		saldo = 0;
-		status = false;
-	}
-
 	public int getNumConta() {
 		return numConta;
 	}
@@ -51,6 +46,11 @@ public class ContaBanco {
 
 	public void setStatus(boolean status) {
 		this.status = status;
+	}
+
+	public ContaBanco() {
+		this.setSaldo(0);
+		this.setStatus(false);
 	}
 
 	public void abrirConta(String tipo) {
