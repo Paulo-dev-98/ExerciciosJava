@@ -7,6 +7,15 @@ public class ContaBanco {
 	private String dono;
 	private float saldo;
 	private boolean status;
+	
+	public void estadoAtual() {
+		System.out.println("--------------------------------------------------");
+		System.out.println("Conta:" + this.getNumConta());
+		System.out.println("Tipo: " + this.getTipo());
+		System.out.println("Dono: " + this.getDono());
+		System.out.println("Saldo: " + this.getSaldo());
+		System.out.println("Status: " + this.getStatus());
+	}
 
 	public int getNumConta() {
 		return numConta;
@@ -53,8 +62,10 @@ public class ContaBanco {
 		this.setStatus(false);
 	}
 
-	public void abrirConta(String tipo) {
+	public void abrirConta(String tipo, int numConta, String dono) {
 		this.setTipo(tipo);
+		this.setNumConta(numConta);
+		this.setDono(dono);
 		this.setStatus(true);
 		if (tipo == "cc") {
 			this.setSaldo(50);
@@ -81,8 +92,9 @@ public class ContaBanco {
 	public void depositar(float valor) {
 		if (this.getStatus() == true) {
 			setSaldo(getSaldo() + valor);
+			System.out.println("deposito realisado com sucesso na conta do: " + this.getDono());
 		} else {
-			System.out.println("impossivel depositar");
+			System.out.println("impossivel depositar em uma conta fechada");
 		}
 	}
 
@@ -90,11 +102,12 @@ public class ContaBanco {
 		if (this.getStatus() == true) {
 			if (this.getSaldo() >= valor) {
 				setSaldo(getSaldo() - valor);
+				System.out.println("saque realizado com sucesso na conta do: " + this.getDono());
 			} else {
 				System.out.println("saldo insuficiente");
 			}
 		} else {
-			System.out.println("impossivel sacar");
+			System.out.println("impossivel sacar de uma conta fechada");
 		}
 
 	}
