@@ -8,6 +8,11 @@ public class ContaBanco {
 	private float saldo;
 	private boolean status;
 	
+	public ContaBanco() {
+		saldo = 0;
+		status = false;
+	}
+	
 	
 	public int getNumConta() {
 		return numConta;
