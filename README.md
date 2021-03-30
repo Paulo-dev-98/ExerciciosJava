@@ -1,2 +1,2 @@
-# ExerciciosJava
+# ExercicosJava
 reservatorio reservado para exercicios
