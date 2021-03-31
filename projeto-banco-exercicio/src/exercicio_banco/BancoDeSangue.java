@@ -46,8 +46,8 @@ public class BancoDeSangue {
 		return tipoDeSangueDoDoador;
 	}
 
-	public void setTipoDeSangueDoDoador(String tipoDeSangue) {
-		this.tipoDeSangueDoDoador = tipoDeSangue;
+	public void setTipoDeSangueDoDoador(String tipoDeSangueDoDoador) {
+		this.tipoDeSangueDoDoador = tipoDeSangueDoDoador;
 	}
 
 	public boolean getStatus() {
