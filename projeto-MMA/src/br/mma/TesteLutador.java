@@ -9,10 +9,13 @@ public class TesteLutador {
 	    l[2] = new Lutador("Osiris","Nut", 456, 88.5f, 68.7f, 78, 55 ,42 );
 	    l[3] = new Lutador("Belzebu","inferno", 218, 98.5f, 98.7f, 98, 50 ,12 );
 	    l[4] = new Lutador("Baah","Inferno", 456, 98.5f, 98.7f, 98, 50 ,22 );
-	    l[5] = new Lutador("Loki","Valhala", 558, 98.5f, 98.7f, 98, 50 ,32 );
+	    l[5] = new Lutador("Loki","Valhala", 558, 98.5f, 57.7f, 98, 50 ,32 );
 	   
 	   
-	    l[3].status();
+	  Luta luta1 = new Luta();
+	  luta1.marcarLuta(l[3], l[5]);
+	  luta1.lutar();
+	 
 	}
 
 }
