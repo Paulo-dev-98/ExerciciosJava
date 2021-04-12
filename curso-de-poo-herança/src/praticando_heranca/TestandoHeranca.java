@@ -14,7 +14,7 @@ public class TestandoHeranca {
 		p4.setNome("julio");
 		
 		p2.setCurso("satanismo");
-		p3.setEspecialidade("satanismo");
+		p3.setEspecialidade("informatica");
 		p3.setSalario(3500.54f);
 		
 	
