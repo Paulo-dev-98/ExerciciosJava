@@ -26,8 +26,15 @@ public class ArenaDeCompeticao {
 		n[19] = new Nadador("Simone", "Holanda", 25, "Feminino");
 		
 		
-		n[14].setVitorias(4);
-		n[14].status();
+		Nadar natacao1 = new Nadar();
+		natacao1.marcarCompetição(n[0], n[1]);
+		natacao1.competir(n[0], n[1]);
+		
+		n[0].status();
+		n[1].status();
+		
+		
+		
 
 	}
 
