@@ -32,6 +32,7 @@ public class ArenaDeCompeticao {
 		
 		n[0].status();
 		n[1].status();
+		n[2].status();
 		
 		
 		
