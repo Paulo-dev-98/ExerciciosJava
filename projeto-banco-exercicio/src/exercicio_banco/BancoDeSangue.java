@@ -83,10 +83,8 @@ public class BancoDeSangue {
 		this.setTipoDeSangueDoDoador(tipoDeSangue);
 		this.setProblemaDeSaude(problemaDeSaude);
 		if (this.getStatus() == true) {
-			if (this.getProblemaDeSaude() == "diabetes") {
+			if (this.getProblemaDeSaude() != "nenhum") {
 				System.out.println("você não pode realizar a doação pois você tem: " + getProblemaDeSaude());
-			} else if (this.getProblemaDeSaude() == "hipertenção") {
-				System.out.println("você não pode fazer a doação pois você tem: " + getProblemaDeSaude());
 			} else {
 				System.out.println("Doação autorizada, obrigado!");
 			}
@@ -95,21 +93,20 @@ public class BancoDeSangue {
 		}
 
 	}
-	
+
 	public void receber(String tipoDeSangueDoReceptor, String tipoDeSangueDoDoador) {
 		this.setTipoDeSangueDoReceptor(tipoDeSangueDoReceptor);
 		this.setTipoDeSangueDoDoador(tipoDeSangueDoDoador);
-		if(this.getStatus() == true){
-			if(this.getTipoDeSangueDoReceptor() != this.getTipoDeSangueDoDoador()) {
+		if (this.getStatus() == true) {
+			if (this.getTipoDeSangueDoReceptor() != this.getTipoDeSangueDoDoador()) {
 				System.out.println("doação incompativel");
-			}else {
+			} else {
 				System.out.println("doação realizada, obrigado!");
 			}
-			
-		}else {
+
+		} else {
 			System.out.println("imposivel receber doação pois você não está cadastrado");
 		}
 	}
-	
 
 }
