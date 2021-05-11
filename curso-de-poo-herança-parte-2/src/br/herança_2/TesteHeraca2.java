@@ -28,6 +28,21 @@ public class TesteHeraca2 {
 		b1.pagarMensalidade();
 		System.out.println(b1.toString());
 		
-     
-	}
+		Professor p1 = new Professor(2500, "Magia Negra");
+		p1.setNome("Rulio");
+		p1.setSexo("M");
+		p1.setIdade(83);
+		System.out.println(p1.toString());
+		p1.receberAumento(300);
+		System.out.println(p1.toString());
+		
+		Tecnico t1 = new Tecnico();
+		t1.setNome("lutero");
+		t1.setIdade(32);
+		t1.setSexo("M");
+		t1.setRegistroProfissional(13);
+		System.out.println(t1.toString());
+		
+		
+		}
 }
