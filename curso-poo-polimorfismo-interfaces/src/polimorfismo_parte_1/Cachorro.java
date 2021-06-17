@@ -2,34 +2,6 @@ package polimorfismo_parte_1;
 
 public class Cachorro extends Mamifero implements Mascotes {
 	
-	public void reacao(String mensagem) {
-		if(mensagem == "feio") {
-			System.out.println("lata forte");
-		}else {
-			System.out.println("não sei");
-		}
-	}
-	
-	public void reacao(float hora) {
-		if(hora <= 10.30f) {
-			System.out.println("dormindo");
-		}
-	}
-	
-	public void reacao(int idade) {
-		if(idade >= 12) {
-			System.out.println("velho");
-		} else if(idade < 12) {
-			System.out.println("crescendo");
-		}else {
-			System.out.println("não sei kkkkkkk");
-		}
-	}
-	
-//	public void reacao() {
-//		
-//	}
-	
 	public void enterrarOsso() {
 		System.out.println("enterrando osso");
 	}
