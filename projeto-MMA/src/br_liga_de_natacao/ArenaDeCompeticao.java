@@ -11,7 +11,7 @@ public class ArenaDeCompeticao {
 		n[4] = new Nadador("Roberto", "Ucrania", 27, "Masculino");
 		n[5] = new Nadador("Marcelo", "India", 30, "Masculino");
 		n[6] = new Nadador("Antonio", "França", 41, "Masculino");
-		n[7] = new Nadador("Otavio", "Peru", 35, "Masculino");
+		n[7] = new Nadador("Eziquiel", "Peru", 35, "Masculino");
 		n[8] = new Nadador("Diego", "Romenia", 42, "Masculino");
 		n[9] = new Nadador("Apolo", "Grecia", 18, "Masculino");
 		n[10] = new Nadador("Bruna", "Italia", 13, "Feminino");
