@@ -15,16 +15,10 @@ public class TestarArvore {
 //		m1.alimentar();
 //		m1.emitirSom();
 //		
-		Cachorro c1 = new Cachorro();
-		c1.abanarRabo();
-		c1.setCorDaPele("branco");
-		c1.locomover();
-		c1.brincar();
-		c1.reacao("fe");
-		c1.reacao(13.25f);
-		c1.reacao("feio");
-		c1.reacao(13);
-		c1.reacao(8);
+	
+       Cachorro bob = new Cachorro();
+       bob.morder();
+       
 //		
 //		Pinguim p1 = new Pinguim();
 //		p1.locomover();

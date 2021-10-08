@@ -33,6 +33,10 @@ public class Cachorro extends Mamifero implements Mascotes {
 	public void enterrarOsso() {
 		System.out.println("enterrando osso");
 	}
+	
+	public void morder() {
+		System.out.println("morder");
+	}
 
 	public void abanarRabo() {
 		System.out.println("abanando o rabo");

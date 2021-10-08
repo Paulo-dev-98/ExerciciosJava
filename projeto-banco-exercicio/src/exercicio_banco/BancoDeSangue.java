@@ -72,10 +72,10 @@ public class BancoDeSangue {
 
 	}
 
-	public void Cadastro(String nome, String cpd) {
+	public void Cadastro(String nome, String cpf) {
 		this.setStatus(true);
 		this.setNome(nome);
-		this.setCpf(cpd);
+		this.setCpf(cpf);
 
 	}
 
