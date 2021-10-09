@@ -22,5 +22,9 @@ public class Jogo {
 		
 		System.out.println(h1.toString());
 		
+		h1.realizarPartida(true);
+		
+		System.out.println(h1.toString());
+		
 	}
 }
