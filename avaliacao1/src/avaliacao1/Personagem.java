@@ -1,10 +1,10 @@
 package avaliacao1;
 
 public class Personagem {
-    String nome;
-    String classe;
-    String atributo;
-    String poder;
+	private String nome;
+	private String classe;
+	private String atributo;
+	private String poder;
     
 	public Personagem(String nome, String classe, String atributo, String poder) {
 		this.nome = nome;

@@ -1,10 +1,10 @@
 package avaliacao1;
 
 public class Jogador {
-    String nome;
-    int idade;
-    String categoria;
-    String email;
+    private String nome;
+    private int idade;
+    private String categoria;
+    private String email;
     
 	public Jogador(String nome, int idade, String categoria, String email) {
 		this.nome = nome;

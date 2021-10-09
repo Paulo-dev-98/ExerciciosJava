@@ -2,10 +2,10 @@ package avaliacao1;
 
 public class Arma {
     
-    String nome;
-    String atributo;
-    String nivel;
-    float dano;
+	private String nome;
+	private String atributo;
+	private String nivel;
+	private float dano;
     
 	public Arma(String nome, String atributo, String nivel, float dano) {
 		this.nome = nome;
