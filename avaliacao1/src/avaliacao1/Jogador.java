@@ -3,14 +3,23 @@ package avaliacao1;
 public class Jogador {
     private String nome;
     private int idade;
-    private String categoria;
+    private int categoria;
     private String email;
+    private boolean ganhou;
     
-	public Jogador(String nome, int idade, String categoria, String email) {
+	public Jogador(String nome, int idade, int categoria, String email) {
 		this.nome = nome;
 		this.idade = idade;
 		this.categoria = categoria;
 		this.email = email;
+	}
+	
+	public void realizarPartida(boolean ganhou) {
+		if(ganhou == true) {
+			setCategoria(getCategoria() +1);
+		}else {
+			setCategoria(getCategoria() - 1);
+		}
 	}
 
 	public String getNome() {
@@ -29,11 +38,11 @@ public class Jogador {
 		this.idade = idade;
 	}
 
-	public String getCategoria() {
+	public int getCategoria() {
 		return categoria;
 	}
 
-	public void setCategoria(String categoria) {
+	public void setCategoria(int categoria) {
 		this.categoria = categoria;
 	}
 
@@ -47,9 +56,8 @@ public class Jogador {
 
 	@Override
 	public String toString() {
-		return "Jogador [nome=" + nome + ", idade=" + idade + ", categoria=" + categoria + ", email=" + email + "]";
+		return "Jogador [nome=" + nome + ", idade=" + idade + ", categoria=" + categoria + ", email=" + email
+				+ ", ganhou=" + ganhou + "]";
 	}
-    
-	
-    
+
 }

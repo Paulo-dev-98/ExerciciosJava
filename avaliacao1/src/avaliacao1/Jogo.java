@@ -2,7 +2,7 @@ package avaliacao1;
 
 public class Jogo {
     public static void main(String[] args) {
-		Jogador h1 = new Jogador("Henriqie", 25, "novato", "henriquedoido@gmail.com");
+		Jogador h1 = new Jogador("Henriqie", 25, 1, "henriquedoido@gmail.com");
 		
 		System.out.println(h1.toString());
 		
@@ -17,5 +17,10 @@ public class Jogo {
 		cajado1.subirNivel();
 		
 		System.out.println(cajado1.toString());
+		
+		h1.realizarPartida(true);
+		
+		System.out.println(h1.toString());
+		
 	}
 }
