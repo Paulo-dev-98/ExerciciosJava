@@ -53,6 +53,15 @@ public class Jogador {
 	public void setEmail(String email) {
 		this.email = email;
 	}
+	
+
+	public boolean isGanhou() {
+		return ganhou;
+	}
+
+	public void setGanhou(boolean ganhou) {
+		this.ganhou = ganhou;
+	}
 
 	@Override
 	public String toString() {
