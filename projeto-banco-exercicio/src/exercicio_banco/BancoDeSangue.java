@@ -10,12 +10,12 @@ public class BancoDeSangue {
 	private String problemaDeSaude;
 
 	public void estadoAtual() {
-		System.out.println("----------------------------------------------------------------------------------");
 		System.out.println("O nome do doador é: " + getNome());
 		System.out.println("O CPF do doador é: " + getCpf());
 		System.out.println("O tipo sanguinio do doador é:" + getTipoDeSangueDoDoador());
 		System.out.println("O Status do cadastro é: " + getStatus());
 		System.out.println("O problema de saude do doador é: " + getProblemaDeSaude());
+		System.out.println("----------------------------------------------------------------------------------");
 	}
 
 	public String getTipoDeSangueDoReceptor() {
